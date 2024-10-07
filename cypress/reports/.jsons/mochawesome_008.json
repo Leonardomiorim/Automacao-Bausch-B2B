@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-10-04T19:37:15.082Z",
+    "end": "2024-10-04T19:39:10.228Z",
+    "duration": 115146,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f01e81d6-896d-4735-9c13-2cd8b38bd7f9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\solucoesmx.cy.js",
+      "file": "cypress\\e2e\\solucoesmx.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b959dd83-b1b3-4a07-b7c9-3ce1eb6f4be3",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar uma nova compra marketplace",
+              "fullTitle": "Pedido de Lentes Realizar uma nova compra marketplace",
+              "timedOut": null,
+              "duration": 33807,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoesmx.cy.js\\\\Pedido de Lentes -- Realizar uma nova compra marketplace (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseMarketplace();\ncreateNewOrderMarketplace();\ncompleteOrderMarketplace();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-Soflens\\ 59`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-Soflens\\ 59`, but never found it.\n    at createNewOrderMarketplace (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:87:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:13:8)",
+                "diff": null
+              },
+              "uuid": "f59878e6-8f05-4f09-bd92-5a4970c1f35c",
+              "parentUUID": "b959dd83-b1b3-4a07-b7c9-3ce1eb6f4be3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 46111,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {},
+              "uuid": "68f78434-f25c-4ec0-8823-62759bf879ce",
+              "parentUUID": "b959dd83-b1b3-4a07-b7c9-3ce1eb6f4be3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma amostra",
+              "fullTitle": "Pedido de Lentes Realizar uma amostra",
+              "timedOut": null,
+              "duration": 33385,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoesmx.cy.js\\\\Pedido de Lentes -- Realizar uma amostra (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseAmostra();\ncreateNewOrderAmostra();\ncompleteOrderAmostra();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-Biotrue\\ One\\ Day`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-Biotrue\\ One\\ Day`, but never found it.\n    at createNewOrderAmostra (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:173:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:29:8)",
+                "diff": null
+              },
+              "uuid": "f23e99a3-e214-4e3b-b1be-f171ca751687",
+              "parentUUID": "b959dd83-b1b3-4a07-b7c9-3ce1eb6f4be3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "68f78434-f25c-4ec0-8823-62759bf879ce"
+          ],
+          "failures": [
+            "f59878e6-8f05-4f09-bd92-5a4970c1f35c",
+            "f23e99a3-e214-4e3b-b1be-f171ca751687"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 113303,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

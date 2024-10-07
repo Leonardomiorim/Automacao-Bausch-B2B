@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-04T19:23:25.645Z",
+    "end": "2024-10-04T19:29:29.873Z",
+    "duration": 364228,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "76677560-dfd0-419e-8839-fe859dd17915",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lente.cy.js",
+      "file": "cypress\\e2e\\lente.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um Pedido de Doação para Funcionário",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Doação para Funcionário",
+              "timedOut": null,
+              "duration": 53020,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseDoacaoParaFuncionario();\ncreateNewOrderDoacaoParaFuncionario();\ncompleteOrderDoacaoParaFuncionario();",
+              "err": {},
+              "uuid": "331a3ce6-a407-46ea-8619-138618085c05",
+              "parentUUID": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Troca",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Troca",
+              "timedOut": null,
+              "duration": 80829,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderTroca();\ncompleteOrderTroca();",
+              "err": {},
+              "uuid": "87918b34-d589-4f34-9047-9ec1393d5902",
+              "parentUUID": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Envio de remessa",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Envio de remessa",
+              "timedOut": null,
+              "duration": 69830,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {},
+              "uuid": "714457fe-2384-4fe5-bff9-d91b52978078",
+              "parentUUID": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Remessa da caixa de prova",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Remessa da caixa de prova",
+              "timedOut": null,
+              "duration": 51811,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderRemessaDaCaixaDeProva();\ncompleteOrderRemessaDaCaixaDeProva();",
+              "err": {},
+              "uuid": "3d46c9d6-9c0a-486d-9d8d-57787b665819",
+              "parentUUID": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Reposição da caixa de prova",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Reposição da caixa de prova",
+              "timedOut": null,
+              "duration": 51449,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseReposiçãoDaCaixaDeProva();\ncreateNewOrderReposiçãoDaCaixaDeProva();\ncompleteOrderReposiçãoDaCaixaDeProva();",
+              "err": {},
+              "uuid": "3cab1035-ef29-42f4-997f-c72046b96be7",
+              "parentUUID": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de garantia",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de garantia",
+              "timedOut": null,
+              "duration": 54844,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderGarantia();\ncompleteOrderGarantia();",
+              "err": {},
+              "uuid": "ce8a9646-3e57-44b0-80a7-cbdbb92a857c",
+              "parentUUID": "2a4c9b5b-6c84-4eb1-910a-abf55aa13c2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "331a3ce6-a407-46ea-8619-138618085c05",
+            "87918b34-d589-4f34-9047-9ec1393d5902",
+            "714457fe-2384-4fe5-bff9-d91b52978078",
+            "3d46c9d6-9c0a-486d-9d8d-57787b665819",
+            "3cab1035-ef29-42f4-997f-c72046b96be7",
+            "ce8a9646-3e57-44b0-80a7-cbdbb92a857c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 361783,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
