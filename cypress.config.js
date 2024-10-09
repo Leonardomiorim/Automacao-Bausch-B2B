@@ -13,7 +13,7 @@ module.exports = defineConfig({
   reporterOptions: {
     reportDir: 'cypress/reports',  // Verifique se o diretório está correto
     overwrite: false,              // Não sobrescreve relatórios antigos
-    html: true,                    // Gera o relatório em HTML
+    html: false,                    // Gera o relatório em HTML
     json: true,                     // Gera o relatório em JSON
   }
 });

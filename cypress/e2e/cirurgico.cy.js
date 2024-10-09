@@ -6,7 +6,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar um pedido de bonificação
-    it.only('Realizar um novo pedido de bonificação', () => {
+    it('Realizar um novo pedido de bonificação', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchase();
         createNewOrderBonificacao();
@@ -14,7 +14,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar uma compra futura
-    it.only('Realizar uma compra futura', () => {
+    it('Realizar uma compra futura', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchase();
         createNewOrderFutura();
@@ -22,7 +22,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar uma compra pontual
-    it.only('Realizar uma compra pontual', () => {
+    it('Realizar uma compra pontual', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchase();
         createNewOrderPontual();
@@ -30,7 +30,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar um pedido de devolução
-    it.only('Realizar um Pedido de devolução', () => {
+    it('Realizar um Pedido de devolução', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseDevolucao();
         createNewOrderDevolucao();
@@ -38,7 +38,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar um pedido de troca
-    it.only('Realizar um Pedido de Troca', () => {
+    it('Realizar um Pedido de Troca', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseTroca();
         createNewOrderTroca();
@@ -46,7 +46,7 @@ describe.only('Pedido de Lentes', () => {
     });
    
     // Teste principal para realizar um pedido de envio de remessa
-    it.only('Realizar um Pedido de Envio de remessa', () => {
+    it('Realizar um Pedido de Envio de remessa', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseEnvioDeRemessa();
         createNewOrderEnvioDeRemessa();
@@ -54,7 +54,7 @@ describe.only('Pedido de Lentes', () => {
     });
     
     // Teste principal para realizar um pedido de remessa da consignação
-    it.only('Realizar um Pedido de Remessa da Consignação', () => {
+    it('Realizar um Pedido de Remessa da Consignação', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseRemessaDaConsignacao();
         createNewOrderRemessaDaConsignacao();
@@ -62,7 +62,7 @@ describe.only('Pedido de Lentes', () => {
     });    
 
     // Teste principal para realizar um pedido de retorno simbólico da consignação
-    it.only('Realizar um Pedido de Retorno simbolico da consignação', () => {
+    it('Realizar um Pedido de Retorno simbolico da consignação', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseRetornoSimbolicoDaConsignacao();
         createNewOrderRetornoSimbolicoDaConsignacao();
