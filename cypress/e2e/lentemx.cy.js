@@ -14,11 +14,19 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar uma compra pontual
-    it('Realizar uma compra pontual', () => {
+    it.only('Realizar uma compra pontual', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchase();
         createNewOrderPontual();
         completeOrderPontual();
+    });
+
+    // Teste principal para realizar um pedido de amostra
+    it.only('Realizar uma amostra', () => {
+        login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
+        navigateToPurchaseAmostra();
+        createNewOrderAmostra();
+        completeOrderAmostra();
     });
         
     // Função de login
@@ -45,12 +53,23 @@ describe.only('Pedido de Lentes', () => {
     function navigateToPurchase() {
         cy.get('body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div').click();
         cy.wait(1000); // Esperar 1 segundo
-        cy.get('#client-sidenav > div.filters-group-drawer.layout-row > div.input-wrapper.flex-auto').type('0010019855');
+        cy.get('#client-sidenav > div.filters-group-drawer.layout-row > div.input-wrapper.flex-auto').type('0010001154');
         cy.wait(2000); // Espera 2 segundos
         cy.get('#client-sidenav > md-content > paginated-list > md-list > md-list-item:nth-child(2) > div > button').click();
         cy.wait(2000); // Espera 2 segundos
         cy.get('body > div > toolbar-menu > md-toolbar > div > div > div.menu-items > md-list:nth-child(1) > md-list-item > div').click();
-    }   
+    }
+    
+    // Função para navegação até a seção de amostra
+    function navigateToPurchaseAmostra() {
+        cy.get('body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div').click();
+        cy.wait(1000); // Esperar 1 segundo
+        cy.get('#client-sidenav > div.filters-group-drawer.layout-row > div.input-wrapper.flex-auto').type('0010001154');
+        cy.wait(2000); // Espera 2 segundos
+        cy.get('#client-sidenav > md-content > paginated-list > md-list > md-list-item:nth-child(2) > div > button').click();
+        cy.wait(2000); // Espera 2 segundos
+        cy.get('body > div > toolbar-menu > md-toolbar > div > div > div.menu-items > md-list:nth-child(1) > md-list-item > div').click();
+    }    
 
     // Função para criar uma compra marketplace
     function createNewOrderMarketplace() {
