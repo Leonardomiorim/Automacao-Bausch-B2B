@@ -1,0 +1,243 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-10T16:16:03.297Z",
+    "end": "2024-10-10T16:16:04.446Z",
+    "duration": 1149,
+    "testsRegistered": 8,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 7,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "2fb2311d-d5b8-46b0-8fa9-08575a8b1dcc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cirurgico.cy.js",
+      "file": "cypress\\e2e\\cirurgico.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um novo pedido de bonificação",
+              "fullTitle": "Pedido de Lentes Realizar um novo pedido de bonificação",
+              "timedOut": null,
+              "duration": 1030,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um novo pedido de bonificação -- before each hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderBonificacao();\ncompleteBonificacaoOrder();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://b2bdev.bausch.com.br/b2b/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo EAI_AGAIN b2bdev.bausch.com.br\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Pedido de Lentes`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://b2bdev.bausch.com.br/b2b/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo EAI_AGAIN b2bdev.bausch.com.br\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Pedido de Lentes`\n    at <unknown> (http://localhost:64115/__cypress/runner/cypress_runner.js:131491:74)\n    at visitFailedByErr (http://localhost:64115/__cypress/runner/cypress_runner.js:130889:12)\n    at <unknown> (http://localhost:64115/__cypress/runner/cypress_runner.js:131490:11)\n    at tryCatcher (http://localhost:64115/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:64115/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:64115/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:64115/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:64115/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:64115/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:64115/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:64115/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:64115/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:5:11)\n\nFrom Node.js Internals:\n  Error: getaddrinfo EAI_AGAIN b2bdev.bausch.com.br\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:108:26)",
+                "diff": null
+              },
+              "uuid": "82ac7338-019f-467a-a85b-c29e8f558280",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra futura",
+              "fullTitle": "Pedido de Lentes Realizar uma compra futura",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderFutura();\ncompleteOrderFutura();",
+              "err": {},
+              "uuid": "63d4dd7a-e6fe-47c1-890f-14ad163e7e64",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {},
+              "uuid": "a6ac1dbf-9dff-4594-a7e7-839f4ed7c89d",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar um Pedido de devolução",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de devolução",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseDevolucao();\ncreateNewOrderDevolucao();\ncompleteOrderDevolucao();",
+              "err": {},
+              "uuid": "965cccfc-66f6-4741-8bd3-ae289fca6e3c",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar um Pedido de Troca",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Troca",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseTroca();\ncreateNewOrderTroca();\ncompleteOrderTroca();",
+              "err": {},
+              "uuid": "b28a42e6-ea0d-4a16-929b-be39bcb727b4",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar um Pedido de Envio de remessa",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Envio de remessa",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {},
+              "uuid": "2ebaf075-d6e2-40d6-8f66-e4c4ef0b67db",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar um Pedido de Remessa da Consignação",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Remessa da Consignação",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseRemessaDaConsignacao();\ncreateNewOrderRemessaDaConsignacao();\ncompleteOrderRemessaDaConsignacao();",
+              "err": {},
+              "uuid": "d7113a1f-b8c8-4fb3-b87e-ef1220449a7c",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar um Pedido de Retorno simbolico da consignação",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Retorno simbolico da consignação",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseRetornoSimbolicoDaConsignacao();\ncreateNewOrderRetornoSimbolicoDaConsignacao();\ncompleteOrderRetornoSimbolicoDaConsignacao();",
+              "err": {},
+              "uuid": "eda685fa-4eb7-4639-a65f-95de9a012cfd",
+              "parentUUID": "14e92be9-2326-4759-ac2e-5ae0115a3e0f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "82ac7338-019f-467a-a85b-c29e8f558280"
+          ],
+          "pending": [],
+          "skipped": [
+            "63d4dd7a-e6fe-47c1-890f-14ad163e7e64",
+            "a6ac1dbf-9dff-4594-a7e7-839f4ed7c89d",
+            "965cccfc-66f6-4741-8bd3-ae289fca6e3c",
+            "b28a42e6-ea0d-4a16-929b-be39bcb727b4",
+            "2ebaf075-d6e2-40d6-8f66-e4c4ef0b67db",
+            "d7113a1f-b8c8-4fb3-b87e-ef1220449a7c",
+            "eda685fa-4eb7-4639-a65f-95de9a012cfd"
+          ],
+          "duration": 1030,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 2,
+    "pending": 0,
+    "failures": 4,
+    "start": "2024-10-11T16:05:19.107Z",
+    "end": "2024-10-11T16:10:03.460Z",
+    "duration": 284353,
+    "testsRegistered": 6,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee232bde-0bbb-4e49-bcd9-069797545b03",
+      "title": "",
+      "fullFile": "cypress\\e2e\\solucoes.cy.js",
+      "file": "cypress\\e2e\\solucoes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+          "title": "Pedido de Soluções",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um novo pedido de bonificação",
+              "fullTitle": "Pedido de Soluções Realizar um novo pedido de bonificação",
+              "timedOut": null,
+              "duration": 58918,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderBonificacao();\ncompleteBonificacaoOrder();",
+              "err": {},
+              "uuid": "035567a1-1634-48af-bc5a-9635bf8d76d2",
+              "parentUUID": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra futura",
+              "fullTitle": "Pedido de Soluções Realizar uma compra futura",
+              "timedOut": null,
+              "duration": 35793,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoes.cy.js\\\\Pedido de Soluções -- Realizar uma compra futura (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderFutura();\ncompleteOrderFutura();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#orders-available > md-toolbar > div > a > md-icon`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#orders-available > md-toolbar > div > a > md-icon`, but never found it.\n    at createNewOrderFutura (webpack://mark---1/./cypress/e2e/solucoes.cy.js:155:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoes.cy.js:21:8)",
+                "diff": null
+              },
+              "uuid": "a82f07e2-7dc5-4eda-928e-a1ef05a0e254",
+              "parentUUID": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Soluções Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 36647,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoes.cy.js\\\\Pedido de Soluções -- Realizar uma compra pontual (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#orders-available > md-toolbar > div > a`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#orders-available > md-toolbar > div > a`, but never found it.\n    at createNewOrderPontual (webpack://mark---1/./cypress/e2e/solucoes.cy.js:197:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoes.cy.js:29:8)",
+                "diff": null
+              },
+              "uuid": "9da1e50b-769f-45ea-a83f-b2f47d0129d5",
+              "parentUUID": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de amostra",
+              "fullTitle": "Pedido de Soluções Realizar um Pedido de amostra",
+              "timedOut": null,
+              "duration": 48657,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderAmostra();\ncompleteOrderAmostra();",
+              "err": {},
+              "uuid": "c050ae3d-7132-4148-9392-d94066038070",
+              "parentUUID": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Doação para Funcionário",
+              "fullTitle": "Pedido de Soluções Realizar um Pedido de Doação para Funcionário",
+              "timedOut": null,
+              "duration": 61492,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoes.cy.js\\\\Pedido de Soluções -- Realizar um Pedido de Doação para Funcionário (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseDoacaoParaFuncionario();\ncreateNewOrderDoacaoParaFuncionario();\ncompleteOrderDoacaoParaFuncionario();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `div.header > button[ng-click=\"closeDialog()\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `div.header > button[ng-click=\"closeDialog()\"]`, but never found it.\n    at completeOrderDoacaoParaFuncionario (webpack://mark---1/./cypress/e2e/solucoes.cy.js:300:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoes.cy.js:46:8)",
+                "diff": null
+              },
+              "uuid": "dcc6d318-502f-4208-8045-3f3fa9782964",
+              "parentUUID": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Envio de Remessa",
+              "fullTitle": "Pedido de Soluções Realizar um Pedido de Envio de Remessa",
+              "timedOut": null,
+              "duration": 38292,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoes.cy.js\\\\Pedido de Soluções -- Realizar um Pedido de Envio de Remessa (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#orders-available > md-toolbar > div > a`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#orders-available > md-toolbar > div > a`, but never found it.\n    at createNewOrderEnvioDeRemessa (webpack://mark---1/./cypress/e2e/solucoes.cy.js:320:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoes.cy.js:53:8)",
+                "diff": null
+              },
+              "uuid": "d556bf3f-7e39-459b-aca6-67345651a9d1",
+              "parentUUID": "4950e31f-30d5-49ef-b13b-cb5cde0213d1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "035567a1-1634-48af-bc5a-9635bf8d76d2",
+            "c050ae3d-7132-4148-9392-d94066038070"
+          ],
+          "failures": [
+            "a82f07e2-7dc5-4eda-928e-a1ef05a0e254",
+            "9da1e50b-769f-45ea-a83f-b2f47d0129d5",
+            "dcc6d318-502f-4208-8045-3f3fa9782964",
+            "d556bf3f-7e39-459b-aca6-67345651a9d1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 279799,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
