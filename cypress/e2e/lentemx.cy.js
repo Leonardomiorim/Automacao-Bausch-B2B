@@ -2,7 +2,7 @@ describe.only('Pedido de Lentes', () => {
     // Realiza o setup antes de cada teste
     beforeEach(() => {
         // Visita a página de login
-        cy.visit('https://b2bdev.bausch.com.mx/b2b/login');
+        cy.visit('https://b2bqa.bausch.com.mx/b2b/login');
     });
 
     // Teste principal para realizar uma compra marketplace
@@ -19,14 +19,6 @@ describe.only('Pedido de Lentes', () => {
         navigateToPurchase();
         createNewOrderPontual();
         completeOrderPontual();
-    });
-
-    // Teste principal para realizar um pedido de amostra
-    it.only('Realizar uma amostra', () => {
-        login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
-        navigateToPurchaseAmostra();
-        createNewOrderAmostra();
-        completeOrderAmostra();
     });
         
     // Função de login
@@ -58,18 +50,7 @@ describe.only('Pedido de Lentes', () => {
         cy.get('#client-sidenav > md-content > paginated-list > md-list > md-list-item:nth-child(2) > div > button').click();
         cy.wait(2000); // Espera 2 segundos
         cy.get('body > div > toolbar-menu > md-toolbar > div > div > div.menu-items > md-list:nth-child(1) > md-list-item > div').click();
-    }
-    
-    // Função para navegação até a seção de amostra
-    function navigateToPurchaseAmostra() {
-        cy.get('body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div').click();
-        cy.wait(1000); // Esperar 1 segundo
-        cy.get('#client-sidenav > div.filters-group-drawer.layout-row > div.input-wrapper.flex-auto').type('0010001154');
-        cy.wait(2000); // Espera 2 segundos
-        cy.get('#client-sidenav > md-content > paginated-list > md-list > md-list-item:nth-child(2) > div > button').click();
-        cy.wait(2000); // Espera 2 segundos
-        cy.get('body > div > toolbar-menu > md-toolbar > div > div > div.menu-items > md-list:nth-child(1) > md-list-item > div').click();
-    }    
+    }   
 
     // Função para criar uma compra marketplace
     function createNewOrderMarketplace() {
@@ -141,7 +122,7 @@ describe.only('Pedido de Lentes', () => {
 
     // Função para completar o pedido de compra pontual
     function completeOrderPontual() {
-        cy.get('body > div > md-content > ng-view > main > div:nth-child(2) > div > div > div.card-content > div:nth-child(3) > div > select').select('0010019855 - JUAN FRANCISCO SOLIS GONZALEZ')
+        cy.get('body > div > md-content > ng-view > main > div:nth-child(2) > div > div > div.card-content > div:nth-child(3) > div > select').select('0010001154 - ALMACEN DE DROGAS')
         cy.get('body > div > md-content > ng-view > main > div:nth-child(2) > div > div > div.card-content > div:nth-child(4) > div > select').select('Billete');
         cy.wait(2000); // Espera 2 segundos
         cy.get('body > div > md-content > ng-view > main > div:nth-child(2) > div > div > div.card-content > div:nth-child(5) > div').click();

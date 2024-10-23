@@ -1,0 +1,270 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 0,
+    "pending": 0,
+    "failures": 8,
+    "start": "2024-10-19T10:46:59.537Z",
+    "end": "2024-10-19T10:48:35.978Z",
+    "duration": 96441,
+    "testsRegistered": 8,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7fb5e4e0-e58f-4c3e-a755-5ccdd17b266d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cirurgico.cy.js",
+      "file": "cypress\\e2e\\cirurgico.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um novo pedido de bonificação",
+              "fullTitle": "Pedido de Lentes Realizar um novo pedido de bonificação",
+              "timedOut": null,
+              "duration": 11458,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um novo pedido de bonificação (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderBonificacao();\ncompleteBonificacaoOrder();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchase (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:83:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:11:8)",
+                "diff": null
+              },
+              "uuid": "bc1064ac-542d-4493-84ae-d45ab6b30036",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra futura",
+              "fullTitle": "Pedido de Lentes Realizar uma compra futura",
+              "timedOut": null,
+              "duration": 11395,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar uma compra futura (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderFutura();\ncompleteOrderFutura();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchase (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:83:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:19:8)",
+                "diff": null
+              },
+              "uuid": "1f0a26f2-2b2a-4c63-ae67-2847508d6c40",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 11254,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar uma compra pontual (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchase (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:83:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:27:8)",
+                "diff": null
+              },
+              "uuid": "6d5fb216-7488-4072-8b64-54bc60762c3b",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de devolução",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de devolução",
+              "timedOut": null,
+              "duration": 11031,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de devolução (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseDevolucao();\ncreateNewOrderDevolucao();\ncompleteOrderDevolucao();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseDevolucao (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:105:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:35:8)",
+                "diff": null
+              },
+              "uuid": "c92308cc-b23f-4a98-a40e-926c42eddd17",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Troca",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Troca",
+              "timedOut": null,
+              "duration": 11494,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Troca (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseTroca();\ncreateNewOrderTroca();\ncompleteOrderTroca();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseTroca (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:116:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:43:8)",
+                "diff": null
+              },
+              "uuid": "2792b152-14f7-44c4-a52e-1eaaed145eac",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Envio de remessa",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Envio de remessa",
+              "timedOut": null,
+              "duration": 11595,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Envio de remessa (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseEnvioDeRemessa (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:94:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:51:8)",
+                "diff": null
+              },
+              "uuid": "387594bf-695c-4ed6-a8f6-98a21bb83836",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Remessa da Consignação",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Remessa da Consignação",
+              "timedOut": null,
+              "duration": 11968,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Remessa da Consignação (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseRemessaDaConsignacao();\ncreateNewOrderRemessaDaConsignacao();\ncompleteOrderRemessaDaConsignacao();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseRemessaDaConsignacao (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:127:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:59:8)",
+                "diff": null
+              },
+              "uuid": "45d59cb4-f313-428f-9359-977482b20784",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Retorno simbolico da consignação",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Retorno simbolico da consignação",
+              "timedOut": null,
+              "duration": 12551,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\cirurgico.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Retorno simbolico da consignação (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseRetornoSimbolicoDaConsignacao();\ncreateNewOrderRetornoSimbolicoDaConsignacao();\ncompleteOrderRetornoSimbolicoDaConsignacao();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseRetornoSimbolicoDaConsignacao (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:138:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/cirurgico.cy.js:67:8)",
+                "diff": null
+              },
+              "uuid": "6a80f305-df0b-4952-94a4-cc7b1115d9fa",
+              "parentUUID": "2fdcae60-8e9f-4c48-9949-06eec2426ccb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bc1064ac-542d-4493-84ae-d45ab6b30036",
+            "1f0a26f2-2b2a-4c63-ae67-2847508d6c40",
+            "6d5fb216-7488-4072-8b64-54bc60762c3b",
+            "c92308cc-b23f-4a98-a40e-926c42eddd17",
+            "2792b152-14f7-44c4-a52e-1eaaed145eac",
+            "387594bf-695c-4ed6-a8f6-98a21bb83836",
+            "45d59cb4-f313-428f-9359-977482b20784",
+            "6a80f305-df0b-4952-94a4-cc7b1115d9fa"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 92746,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

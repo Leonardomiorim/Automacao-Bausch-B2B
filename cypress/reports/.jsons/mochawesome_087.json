@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-21T17:31:05.098Z",
+    "end": "2024-10-21T17:31:06.466Z",
+    "duration": 1368,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "d43dc5e5-bb79-4717-ac52-60ae78eefe3f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lentemx.cy.js",
+      "file": "cypress\\e2e\\lentemx.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "baa8e864-7d4b-4f2e-945a-38c2f9a5f6c4",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar uma nova compra marketplace",
+              "fullTitle": "Pedido de Lentes Realizar uma nova compra marketplace",
+              "timedOut": null,
+              "duration": 1238,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lentemx.cy.js\\\\Pedido de Lentes -- Realizar uma nova compra marketplace -- before each hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseMarketplace();\ncreateNewOrderMarketplace();\ncompleteOrderMarketplace();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://b2bdqa.bausch.com.mx/b2b/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND b2bdqa.bausch.com.mx\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Pedido de Lentes`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://b2bdqa.bausch.com.mx/b2b/login\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: getaddrinfo ENOTFOUND b2bdqa.bausch.com.mx\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Pedido de Lentes`\n    at <unknown> (http://localhost:63570/__cypress/runner/cypress_runner.js:131491:74)\n    at visitFailedByErr (http://localhost:63570/__cypress/runner/cypress_runner.js:130889:12)\n    at <unknown> (http://localhost:63570/__cypress/runner/cypress_runner.js:131490:11)\n    at tryCatcher (http://localhost:63570/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63570/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:63570/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:63570/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:63570/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:63570/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:63570/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:63570/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:63570/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://mark---1/./cypress/e2e/lentemx.cy.js:5:11)\n\nFrom Node.js Internals:\n  Error: getaddrinfo ENOTFOUND b2bdqa.bausch.com.mx\n      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:108:26)",
+                "diff": null
+              },
+              "uuid": "5f22efc5-e5a1-4d20-aa41-5ab79beb2172",
+              "parentUUID": "baa8e864-7d4b-4f2e-945a-38c2f9a5f6c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {},
+              "uuid": "e749ae07-f356-45bc-aee3-5aea5e317a02",
+              "parentUUID": "baa8e864-7d4b-4f2e-945a-38c2f9a5f6c4",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Realizar uma amostra",
+              "fullTitle": "Pedido de Lentes Realizar uma amostra",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseAmostra();\ncreateNewOrderAmostra();\ncompleteOrderAmostra();",
+              "err": {},
+              "uuid": "6a8e2c07-6788-4b7c-a60c-5560a3203ad9",
+              "parentUUID": "baa8e864-7d4b-4f2e-945a-38c2f9a5f6c4",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5f22efc5-e5a1-4d20-aa41-5ab79beb2172"
+          ],
+          "pending": [],
+          "skipped": [
+            "e749ae07-f356-45bc-aee3-5aea5e317a02",
+            "6a8e2c07-6788-4b7c-a60c-5560a3203ad9"
+          ],
+          "duration": 1238,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

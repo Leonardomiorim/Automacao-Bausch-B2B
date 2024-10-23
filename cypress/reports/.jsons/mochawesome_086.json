@@ -1,0 +1,316 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 11,
+    "passes": 6,
+    "pending": 0,
+    "failures": 5,
+    "start": "2024-10-21T17:19:40.083Z",
+    "end": "2024-10-21T17:31:02.385Z",
+    "duration": 682302,
+    "testsRegistered": 11,
+    "passPercent": 54.54545454545454,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "da434363-8b09-490b-96f9-d84db8ae5196",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lente.cy.js",
+      "file": "cypress\\e2e\\lente.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um novo pedido de bonificação",
+              "fullTitle": "Pedido de Lentes Realizar um novo pedido de bonificação",
+              "timedOut": null,
+              "duration": 67636,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderBonificacao();\ncompleteBonificacaoOrder();",
+              "err": {},
+              "uuid": "d48bdd47-211e-47fd-851e-79af9b9d35e3",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra futura",
+              "fullTitle": "Pedido de Lentes Realizar uma compra futura",
+              "timedOut": null,
+              "duration": 54582,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar uma compra futura (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderFutura();\ncompleteOrderFutura();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `PGTO 28 DD`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `PGTO 28 DD`\n\nhttps://on.cypress.io/select\n    at getOptions (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:113692:72)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at retryOptions (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:113724:70)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at completeOrderFutura (webpack://mark---1/./cypress/e2e/lente.cy.js:223:143)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:21:8)",
+                "diff": null
+              },
+              "uuid": "c57d6a89-752f-470a-aae1-f85b49274ee2",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 56188,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar uma compra pontual (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `PGTO 28 DD`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `PGTO 28 DD`\n\nhttps://on.cypress.io/select\n    at getOptions (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:113692:72)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at retryOptions (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:113724:70)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at completeOrderPontual (webpack://mark---1/./cypress/e2e/lente.cy.js:265:143)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:29:8)",
+                "diff": null
+              },
+              "uuid": "b500cf89-2776-4e95-9740-20997514e9ec",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de amostra",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de amostra",
+              "timedOut": null,
+              "duration": 60843,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderAmostra();\ncompleteOrderAmostra();",
+              "err": {},
+              "uuid": "72ac3af4-1f31-43c4-bff8-bfad60f8163e",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de devolução",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de devolução",
+              "timedOut": null,
+              "duration": 64200,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderDevolucao();\ncompleteOrderDevolucao();",
+              "err": {},
+              "uuid": "fa1789ad-e128-4674-871f-45b594399f5a",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Doação para Funcionário",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Doação para Funcionário",
+              "timedOut": null,
+              "duration": 69241,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseDoacaoParaFuncionario();\ncreateNewOrderDoacaoParaFuncionario();\ncompleteOrderDoacaoParaFuncionario();",
+              "err": {},
+              "uuid": "650c4b3f-4fa6-4772-8d90-2c15ab12bd8c",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Troca",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Troca",
+              "timedOut": null,
+              "duration": 58018,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Troca (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderTroca();\ncompleteOrderTroca();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > md-content > ng-view > div > section.item-section > div.card-container.layout-align-end-center.layout-row > div > div.card-content > div.selection-list-container.ng-scope.layout-column.flex > selection-list > main > md-list > md-list-item:nth-child(1) > div.selection-item-row.layout-align-start-center.layout-row > div.ng-scope.flex-5.layout-align-start-start.layout-column > span > label > span > span`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > md-content > ng-view > div > section.item-section > div.card-container.layout-align-end-center.layout-row > div > div.card-content > div.selection-list-container.ng-scope.layout-column.flex > selection-list > main > md-list > md-list-item:nth-child(1) > div.selection-item-row.layout-align-start-center.layout-row > div.ng-scope.flex-5.layout-align-start-start.layout-column > span > label > span > span`, but never found it.\n    at createNewOrderTroca (webpack://mark---1/./cypress/e2e/lente.cy.js:417:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:60:8)",
+                "diff": null
+              },
+              "uuid": "869b5d67-7df5-43ea-8eca-2b864b08f43e",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Envio de remessa",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Envio de remessa",
+              "timedOut": null,
+              "duration": 48618,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Envio de remessa (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div.md-dialog-container.ng-scope > md-dialog > md-toolbar > div > a > md-icon`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div.md-dialog-container.ng-scope > md-dialog > md-toolbar > div > a > md-icon`, but never found it.\n    at createNewOrderEnvioDeRemessa (webpack://mark---1/./cypress/e2e/lente.cy.js:466:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:68:8)",
+                "diff": null
+              },
+              "uuid": "d9f4e515-9fe7-4935-8ecd-625c5109eb8a",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Remessa da caixa de prova",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Remessa da caixa de prova",
+              "timedOut": null,
+              "duration": 70031,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderRemessaDaCaixaDeProva();\ncompleteOrderRemessaDaCaixaDeProva();",
+              "err": {},
+              "uuid": "278d5eeb-4590-4b8d-80a8-e9a08cca2933",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Reposição da caixa de prova",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Reposição da caixa de prova",
+              "timedOut": null,
+              "duration": 47212,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Reposição da caixa de prova (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseReposiçãoDaCaixaDeProva();\ncreateNewOrderReposiçãoDaCaixaDeProva();\ncompleteOrderReposiçãoDaCaixaDeProva();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-Ultra`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-Ultra`, but never found it.\n    at createNewOrderReposiçãoDaCaixaDeProva (webpack://mark---1/./cypress/e2e/lente.cy.js:557:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:84:8)",
+                "diff": null
+              },
+              "uuid": "a03f214a-d490-4f67-b0b5-5cad55115c1c",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de garantia",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de garantia",
+              "timedOut": null,
+              "duration": 76516,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderGarantia();\ncompleteOrderGarantia();",
+              "err": {},
+              "uuid": "7622d82d-dedf-4aa4-b76b-0267dbf010b4",
+              "parentUUID": "3a1e57b1-ce20-4229-bc96-0f18959f9aab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d48bdd47-211e-47fd-851e-79af9b9d35e3",
+            "72ac3af4-1f31-43c4-bff8-bfad60f8163e",
+            "fa1789ad-e128-4674-871f-45b594399f5a",
+            "650c4b3f-4fa6-4772-8d90-2c15ab12bd8c",
+            "278d5eeb-4590-4b8d-80a8-e9a08cca2933",
+            "7622d82d-dedf-4aa4-b76b-0267dbf010b4"
+          ],
+          "failures": [
+            "c57d6a89-752f-470a-aae1-f85b49274ee2",
+            "b500cf89-2776-4e95-9740-20997514e9ec",
+            "869b5d67-7df5-43ea-8eca-2b864b08f43e",
+            "d9f4e515-9fe7-4935-8ecd-625c5109eb8a",
+            "a03f214a-d490-4f67-b0b5-5cad55115c1c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 673085,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

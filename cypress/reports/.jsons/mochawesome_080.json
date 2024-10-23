@@ -1,0 +1,328 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 11,
+    "passes": 3,
+    "pending": 0,
+    "failures": 8,
+    "start": "2024-10-21T13:38:07.777Z",
+    "end": "2024-10-21T13:47:33.269Z",
+    "duration": 565492,
+    "testsRegistered": 11,
+    "passPercent": 27.27272727272727,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "158e25cc-34df-40db-be4c-39d15546dbc9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lente.cy.js",
+      "file": "cypress\\e2e\\lente.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um novo pedido de bonificação",
+              "fullTitle": "Pedido de Lentes Realizar um novo pedido de bonificação",
+              "timedOut": null,
+              "duration": 70672,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderBonificacao();\ncompleteBonificacaoOrder();",
+              "err": {},
+              "uuid": "bf6a4bfe-8c07-4d1f-9b0a-78f0cb309405",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra futura",
+              "fullTitle": "Pedido de Lentes Realizar uma compra futura",
+              "timedOut": null,
+              "duration": 41680,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar uma compra futura (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderFutura();\ncompleteOrderFutura();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<button class=\"btn-secondary ng-binding\" ng-show=\"products.length &amp;&amp; !loader.disableLoadMore\" ng-click=\"loadMoreItems()\" aria-hidden=\"false\">Carrega...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<button class=\"btn-secondary ng-binding\" ng-show=\"products.length &amp;&amp; !loader.disableLoadMore\" ng-click=\"loadMoreItems()\" aria-hidden=\"false\">Carrega...</button>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112443:66)\n    at ensureDescendents (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112479:5)\n    at ensureDescendentsAndScroll (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112485:14)\n    at ensureElIsNotCovered (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112616:5)\n    at runAllChecks (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112815:52)\n    at retryActionability (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112852:16)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at createNewOrderFutura (webpack://mark---1/./cypress/e2e/lente.cy.js:206:140)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:20:8)",
+                "diff": null
+              },
+              "uuid": "5978fd98-c31b-439e-b6a7-ef589546efeb",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 45730,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar uma compra pontual (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<div id=\"item-Soflens 59\" layout=\"column\" class=\"product-frame layout-column\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because the center of this element is hidden from view:\n\n`<div id=\"item-Soflens 59\" layout=\"column\" class=\"product-frame layout-column\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112443:66)\n    at ensureDescendents (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112479:5)\n    at ensureDescendentsAndScroll (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112485:14)\n    at ensureElIsNotCovered (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112616:5)\n    at runAllChecks (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112815:52)\n    at retryActionability (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112852:16)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at createNewOrderPontual (webpack://mark---1/./cypress/e2e/lente.cy.js:248:37)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:28:8)",
+                "diff": null
+              },
+              "uuid": "a134fa02-015f-4e85-b266-56305d2558f5",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de amostra",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de amostra",
+              "timedOut": null,
+              "duration": 66184,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderAmostra();\ncompleteOrderAmostra();",
+              "err": {},
+              "uuid": "7b526ba6-1e84-4223-aacb-aa0af84a5d01",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de devolução",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de devolução",
+              "timedOut": null,
+              "duration": 56842,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de devolução (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderDevolucao();\ncompleteOrderDevolucao();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.trigger()` failed because this element:\n\n`<div layout=\"row\" layout-align=\"space-between center\" ng-mouseenter=\"$ctrl.validateShoppingCart()\" class=\"layout-align-space-between-center layout-row\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"md-dialog-container ng-scope\" tabindex=\"-1\" style=\"top: 380px; height: 800px;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.trigger()` failed because this element:\n\n`<div layout=\"row\" layout-align=\"space-between center\" ng-mouseenter=\"$ctrl.validateShoppingCart()\" class=\"layout-align-space-between-center layout-row\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"md-dialog-container ng-scope\" tabindex=\"-1\" style=\"top: 380px; height: 800px;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112428:68)\n    at ensureDescendents (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112479:5)\n    at ensureDescendentsAndScroll (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112485:14)\n    at ensureElIsNotCovered (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112616:5)\n    at runAllChecks (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112815:52)\n    at retryActionability (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112852:16)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at createNewOrderDevolucao (webpack://mark---1/./cypress/e2e/lente.cy.js:332:121)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:44:8)",
+                "diff": null
+              },
+              "uuid": "50247e7f-c76e-4865-b4f5-106044e6fb89",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Doação para Funcionário",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Doação para Funcionário",
+              "timedOut": null,
+              "duration": 87043,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseDoacaoParaFuncionario();\ncreateNewOrderDoacaoParaFuncionario();\ncompleteOrderDoacaoParaFuncionario();",
+              "err": {},
+              "uuid": "284f9ad8-d495-4de6-9087-96b83acbe08b",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Troca",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Troca",
+              "timedOut": null,
+              "duration": 85716,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Troca (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderTroca();\ncompleteOrderTroca();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.trigger()` failed because this element:\n\n`<div layout=\"row\" layout-align=\"space-between center\" ng-mouseenter=\"$ctrl.validateShoppingCart()\" class=\"layout-align-space-between-center layout-row\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"md-dialog-container ng-scope\" tabindex=\"-1\" style=\"top: 437px; height: 800px;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.trigger()` failed because this element:\n\n`<div layout=\"row\" layout-align=\"space-between center\" ng-mouseenter=\"$ctrl.validateShoppingCart()\" class=\"layout-align-space-between-center layout-row\">...</div>`\n\nis being covered by another element:\n\n`<div class=\"md-dialog-container ng-scope\" tabindex=\"-1\" style=\"top: 437px; height: 800px;\">...</div>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112428:68)\n    at ensureDescendents (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112479:5)\n    at ensureDescendentsAndScroll (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112485:14)\n    at ensureElIsNotCovered (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112616:5)\n    at runAllChecks (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112815:52)\n    at retryActionability (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:112852:16)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.br/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at createNewOrderTroca (webpack://mark---1/./cypress/e2e/lente.cy.js:425:121)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:60:8)",
+                "diff": null
+              },
+              "uuid": "40ec9a14-fafc-42c6-baf7-37d3a5121dda",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Envio de remessa",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Envio de remessa",
+              "timedOut": null,
+              "duration": 21490,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Envio de remessa (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseEnvioDeRemessa (webpack://mark---1/./cypress/e2e/lente.cy.js:129:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:67:8)",
+                "diff": null
+              },
+              "uuid": "2ee518ba-f9ef-4aea-8248-5426d33ea359",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Remessa da caixa de prova",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Remessa da caixa de prova",
+              "timedOut": null,
+              "duration": 24483,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Remessa da caixa de prova (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderRemessaDaCaixaDeProva();\ncompleteOrderRemessaDaCaixaDeProva();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchase (webpack://mark---1/./cypress/e2e/lente.cy.js:118:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:75:8)",
+                "diff": null
+              },
+              "uuid": "a53d50b6-3cdd-4cf4-885d-9244b943b79d",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de Reposição da caixa de prova",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de Reposição da caixa de prova",
+              "timedOut": null,
+              "duration": 27484,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de Reposição da caixa de prova (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseReposiçãoDaCaixaDeProva();\ncreateNewOrderReposiçãoDaCaixaDeProva();\ncompleteOrderReposiçãoDaCaixaDeProva();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchaseReposiçãoDaCaixaDeProva (webpack://mark---1/./cypress/e2e/lente.cy.js:140:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:83:8)",
+                "diff": null
+              },
+              "uuid": "9b371649-53fb-418a-bf0b-98662a597107",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar um Pedido de garantia",
+              "fullTitle": "Pedido de Lentes Realizar um Pedido de garantia",
+              "timedOut": null,
+              "duration": 27500,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lente.cy.js\\\\Pedido de Lentes -- Realizar um Pedido de garantia (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderGarantia();\ncompleteOrderGarantia();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `body > div > toolbar-menu > sub-toolbar-menu > div > div > div.client-container > client-drawer > main > section > div`, but never found it.\n    at navigateToPurchase (webpack://mark---1/./cypress/e2e/lente.cy.js:118:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lente.cy.js:91:8)",
+                "diff": null
+              },
+              "uuid": "1941df5a-7916-4eba-9be0-b144da1d15fe",
+              "parentUUID": "0c7fb504-5235-4612-a1ac-55a9bef9a583",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bf6a4bfe-8c07-4d1f-9b0a-78f0cb309405",
+            "7b526ba6-1e84-4223-aacb-aa0af84a5d01",
+            "284f9ad8-d495-4de6-9087-96b83acbe08b"
+          ],
+          "failures": [
+            "5978fd98-c31b-439e-b6a7-ef589546efeb",
+            "a134fa02-015f-4e85-b266-56305d2558f5",
+            "50247e7f-c76e-4865-b4f5-106044e6fb89",
+            "40ec9a14-fafc-42c6-baf7-37d3a5121dda",
+            "2ee518ba-f9ef-4aea-8248-5426d33ea359",
+            "a53d50b6-3cdd-4cf4-885d-9244b943b79d",
+            "9b371649-53fb-418a-bf0b-98662a597107",
+            "1941df5a-7916-4eba-9be0-b144da1d15fe"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 554824,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

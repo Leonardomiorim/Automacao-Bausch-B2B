@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-10-21T17:36:53.219Z",
+    "end": "2024-10-21T17:37:58.761Z",
+    "duration": 65542,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c7f8bd24-4f32-4039-9376-e165f88147f5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\solucoesmx.cy.js",
+      "file": "cypress\\e2e\\solucoesmx.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1cc6c429-4c48-4ee0-8044-67a1f43d86a1",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar uma nova compra marketplace",
+              "fullTitle": "Pedido de Lentes Realizar uma nova compra marketplace",
+              "timedOut": null,
+              "duration": 31346,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoesmx.cy.js\\\\Pedido de Lentes -- Realizar uma nova compra marketplace (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseMarketplace();\ncreateNewOrderMarketplace();\ncompleteOrderMarketplace();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Soluciones' within the element: <md-menu-content.dropdown.menu-comercial-areas> but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Soluciones' within the element: <md-menu-content.dropdown.menu-comercial-areas> but never did.\n    at createNewOrderMarketplace (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:61:63)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:13:8)",
+                "diff": null
+              },
+              "uuid": "8281e2fc-48b0-4b2d-a2ae-14d4d0ab9c2b",
+              "parentUUID": "1cc6c429-4c48-4ee0-8044-67a1f43d86a1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 29919,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoesmx.cy.js\\\\Pedido de Lentes -- Realizar uma compra pontual (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Soluciones' within the element: <md-menu-content.dropdown.menu-comercial-areas> but never did.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Soluciones' within the element: <md-menu-content.dropdown.menu-comercial-areas> but never did.\n    at createNewOrderPontual (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:103:63)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoesmx.cy.js:21:8)",
+                "diff": null
+              },
+              "uuid": "c3dbc66a-59a4-4c5c-b796-dfa3bfa88762",
+              "parentUUID": "1cc6c429-4c48-4ee0-8044-67a1f43d86a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8281e2fc-48b0-4b2d-a2ae-14d4d0ab9c2b",
+            "c3dbc66a-59a4-4c5c-b796-dfa3bfa88762"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 61265,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

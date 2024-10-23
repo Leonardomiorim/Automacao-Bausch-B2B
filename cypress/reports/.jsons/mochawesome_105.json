@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-22T13:10:58.037Z",
+    "end": "2024-10-22T13:12:01.650Z",
+    "duration": 63613,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0924c62-8a25-4b90-bbe5-55b079bf057c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\lentemx.cy.js",
+      "file": "cypress\\e2e\\lentemx.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d41efa6-8226-42b2-884b-c5b68bac84e9",
+          "title": "Pedido de Lentes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar uma compra pontual",
+              "fullTitle": "Pedido de Lentes Realizar uma compra pontual",
+              "timedOut": null,
+              "duration": 56195,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\lentemx.cy.js\\\\Pedido de Lentes -- Realizar uma compra pontual (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchase();\ncreateNewOrderPontual();\ncompleteOrderPontual();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `0010019855 - JUAN FRANCISCO SOLIS GONZALEZ`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value, index, or text matching: `0010019855 - JUAN FRANCISCO SOLIS GONZALEZ`\n\nhttps://on.cypress.io/select\n    at getOptions (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:113692:72)\n    at tryCatcher (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:4315:29)\n    at retryOptions (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:113724:70)\n    at tryCatcher (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:143678:68)\n    at <unknown> (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:143619:14)\n    at tryCatcher (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://b2bqa.bausch.com.mx/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at completeOrderPontual (webpack://mark---1/./cypress/e2e/lentemx.cy.js:125:143)\n    at Context.eval (webpack://mark---1/./cypress/e2e/lentemx.cy.js:21:8)",
+                "diff": null
+              },
+              "uuid": "2a5daa01-ab43-441d-81e6-e63d4e937fce",
+              "parentUUID": "9d41efa6-8226-42b2-884b-c5b68bac84e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2a5daa01-ab43-441d-81e6-e63d4e937fce"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 56195,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

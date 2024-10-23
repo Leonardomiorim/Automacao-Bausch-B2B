@@ -2,7 +2,7 @@ describe.only('Pedido de Lentes', () => {
     // Realiza o setup antes de cada teste
     beforeEach(() => {
         // Visita a página de login
-        cy.visit('https://b2bdev.bausch.com.br/b2b/login');
+        cy.visit('https://b2bqa.bausch.com.br/b2b/login');
     });
 
     // Teste principal para realizar um pedido de bonificação
@@ -14,7 +14,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar uma compra futura
-    it('Realizar uma compra futura', () => {
+    it.only('Realizar uma compra futura', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchase();
         createNewOrderFutura();
@@ -46,7 +46,7 @@ describe.only('Pedido de Lentes', () => {
     });
 
     // Teste principal para realizar um pedido de doação para funcionário
-    it('Realizar um Pedido de Doação para Funcionário', () => {
+    it.only('Realizar um Pedido de Doação para Funcionário', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseDoacaoParaFuncionario();
         createNewOrderDoacaoParaFuncionario();
@@ -62,7 +62,7 @@ describe.only('Pedido de Lentes', () => {
     });
    
     // Teste principal para realizar um pedido de envio de remessa
-    it('Realizar um Pedido de Envio de remessa', () => {
+    it.only('Realizar um Pedido de Envio de remessa', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseEnvioDeRemessa();
         createNewOrderEnvioDeRemessa();

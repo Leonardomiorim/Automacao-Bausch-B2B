@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-22T12:31:50.248Z",
+    "end": "2024-10-22T12:32:53.522Z",
+    "duration": 63274,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "07f4e001-cb75-4449-91c6-de8901e41be9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\solucoes.cy.js",
+      "file": "cypress\\e2e\\solucoes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b083029c-906b-419e-8b3d-ae6159245a28",
+          "title": "Pedido de Soluções",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realizar um Pedido de Envio de Remessa",
+              "fullTitle": "Pedido de Soluções Realizar um Pedido de Envio de Remessa",
+              "timedOut": null,
+              "duration": 57888,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\solucoes.cy.js\\\\Pedido de Soluções -- Realizar um Pedido de Envio de Remessa (failed).png\"\n    ]\n  ]\n}",
+              "code": "login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');\nnavigateToPurchaseEnvioDeRemessa();\ncreateNewOrderEnvioDeRemessa();\ncompleteOrderEnvioDeRemessa();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-PACKON\\ RENU\\ FRESH\\ 355ML\\+120ML`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#item-PACKON\\ RENU\\ FRESH\\ 355ML\\+120ML`, but never found it.\n    at createNewOrderEnvioDeRemessa (webpack://mark---1/./cypress/e2e/solucoes.cy.js:321:11)\n    at Context.eval (webpack://mark---1/./cypress/e2e/solucoes.cy.js:53:8)",
+                "diff": null
+              },
+              "uuid": "25ba1a2b-ab76-4ffb-b2e6-abf716aa644c",
+              "parentUUID": "b083029c-906b-419e-8b3d-ae6159245a28",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "25ba1a2b-ab76-4ffb-b2e6-abf716aa644c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 57888,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

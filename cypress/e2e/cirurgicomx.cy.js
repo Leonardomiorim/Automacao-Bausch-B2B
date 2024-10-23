@@ -2,7 +2,7 @@ describe.only('Pedido de Lentes', () => {
     // Realiza o setup antes de cada teste
     beforeEach(() => {
         // Visita a página de login
-        cy.visit('https://b2bdev.bausch.com.mx/b2b/login');
+        cy.visit('https://b2bqa.bausch.com.mx/b2b/login');
     });
 
     // Teste principal para realizar uma compra marketplace
