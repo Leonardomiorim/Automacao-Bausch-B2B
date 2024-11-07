@@ -31,7 +31,7 @@ describe.only('Pedido de Soluções', () => {
     });
 
     // Teste principal para realizar um pedido de amostra
-    it('Realizar um Pedido de amostra', () => {
+    it.only('Realizar um Pedido de amostra', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchase();
         createNewOrderAmostra();
@@ -39,7 +39,7 @@ describe.only('Pedido de Soluções', () => {
     });
 
     // Teste principal para realizar um pedido de doação para funcionário
-    it.only('Realizar um Pedido de Doação para Funcionário', () => {
+    it('Realizar um Pedido de Doação para Funcionário', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseDoacaoParaFuncionario();
         createNewOrderDoacaoParaFuncionario();
@@ -47,7 +47,7 @@ describe.only('Pedido de Soluções', () => {
     });
  
     // Teste principal para realizar um pedido de envio de remessa
-    it.only('Realizar um Pedido de Envio de Remessa', () => {
+    it('Realizar um Pedido de Envio de Remessa', () => {
         login('leonardo.miorim@kbase.com.br', '1bz592idyxHLw6');
         navigateToPurchaseEnvioDeRemessa();
         createNewOrderEnvioDeRemessa();
